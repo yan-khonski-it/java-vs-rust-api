@@ -16,7 +16,12 @@ mvn clean install
 
 docker build:
 ```shell
-docker build -t sba .
+docker build -t java-app .
+```
+
+Run the container
+```shell
+docker run -d -p 8080:8080 java-app
 ```
 
 For running without docker, you can run it with:
